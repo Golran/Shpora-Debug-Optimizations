@@ -1,12 +1,14 @@
-﻿using System;
+﻿using BenchmarkDotNet.Running;
+using DotTraceExamples.Programs;
 
 namespace DotTraceExamples
 {
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello World!");
-        }
-    }
+	class Program
+	{
+		static void Main(string[] args)
+		{
+			BenchmarkSwitcher.FromAssembly(typeof(Program).Assembly).Run(args);
+			//ProgrammRunner.Run(new ComplexOperationTestProgram());
+		}
+	}
 }
