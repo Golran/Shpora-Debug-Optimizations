@@ -9,6 +9,7 @@ namespace DotTraceExamples
 		{
 			BenchmarkSwitcher.FromAssembly(typeof(Program).Assembly).Run(args);
 			//ProgrammRunner.Run(new ComplexOperationTestProgram());
+			//ProgrammRunner.Run(new EdgePreservingSmoothingProgram());
 		}
 	}
 }
