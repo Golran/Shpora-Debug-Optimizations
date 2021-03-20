@@ -125,14 +125,15 @@ namespace Benchmarks.Benchmarks
 		{
 			if (x.Length != y.Length)
 				return false;
-			var N = x.Length - x.Length % sizeof(long);
+			var size = sizeof(long);
+			var N = x.Length - x.Length % size;
 			fixed (byte* p1 = x, p2 = y)
 			{
 				byte* x1 = p1, x2 = p2;
-				for (var i = 0; i < N; ++i, x1 += sizeof(long), x2 += sizeof(long))
+				for (var i = 0; i < N; ++i, x1 += size, x2 += size)
 					if (*(long*)x1 != *(long*)x2)
 						return false;
-				for (var i = 0; i < x.Length % sizeof(long); ++i, ++x1, ++x2)
+				for (var i = 0; i < x.Length % size; ++i, ++x1, ++x2)
 					if (*x1 != *x2)
 						return false;
 				return true;
@@ -182,6 +183,7 @@ namespace Benchmarks.Benchmarks
 
 			return true;
 		}
+
 		public static unsafe bool NativeCompare(byte[] x, byte[] y)
 		{
 			fixed (byte* a = x)
