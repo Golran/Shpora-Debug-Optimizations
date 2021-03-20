@@ -7,8 +7,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Benchmarks", "Benchmarks\Be
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotTraceExamples", "DotTraceExamples\DotTraceExamples.csproj", "{E1023278-34EC-4993-8F04-7D94A341DAAA}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JPEG", "JPEG\JPEG.csproj", "{2246B59C-D720-4373-9678-7D0A12038AAD}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,18 +41,6 @@ Global
 		{E1023278-34EC-4993-8F04-7D94A341DAAA}.Release|x64.Build.0 = Release|Any CPU
 		{E1023278-34EC-4993-8F04-7D94A341DAAA}.Release|x86.ActiveCfg = Release|Any CPU
 		{E1023278-34EC-4993-8F04-7D94A341DAAA}.Release|x86.Build.0 = Release|Any CPU
-		{2246B59C-D720-4373-9678-7D0A12038AAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2246B59C-D720-4373-9678-7D0A12038AAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2246B59C-D720-4373-9678-7D0A12038AAD}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{2246B59C-D720-4373-9678-7D0A12038AAD}.Debug|x64.Build.0 = Debug|Any CPU
-		{2246B59C-D720-4373-9678-7D0A12038AAD}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{2246B59C-D720-4373-9678-7D0A12038AAD}.Debug|x86.Build.0 = Debug|Any CPU
-		{2246B59C-D720-4373-9678-7D0A12038AAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2246B59C-D720-4373-9678-7D0A12038AAD}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2246B59C-D720-4373-9678-7D0A12038AAD}.Release|x64.ActiveCfg = Release|Any CPU
-		{2246B59C-D720-4373-9678-7D0A12038AAD}.Release|x64.Build.0 = Release|Any CPU
-		{2246B59C-D720-4373-9678-7D0A12038AAD}.Release|x86.ActiveCfg = Release|Any CPU
-		{2246B59C-D720-4373-9678-7D0A12038AAD}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
